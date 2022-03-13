@@ -12,7 +12,7 @@ class _HomePageState extends State<HomePage> {
   int _current = 0;
   final CarouselController _controller = CarouselController();
   List sliderImages = [
-    "assets/banner.jpg",
+    // "assets/banner.jpg",
     "assets/mikmin.jpg",
     "assets/urbanKids2.jpg",
     "assets/pinkpetals.jpg"

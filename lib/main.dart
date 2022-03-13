@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:miknmin_animation/MainScreen/home_page.dart';
+import 'package:flutter_phoenix/flutter_phoenix.dart';
+import 'package:get/get.dart';
+import 'package:miknmin_animation/animationScreen/animated_window.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(Phoenix(child: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -11,13 +13,14 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    Get.testMode = true;
+    return GetMaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(),
+      home: const AnimatedWindow(),
     );
   }
 }
